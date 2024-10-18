@@ -38,7 +38,7 @@ public class MappingController {
         return "ok";
     }
 
-    @GetMapping(value = "/mapping-consume", consumes = "application/json")
+    @PostMapping(value = "/mapping-consume", consumes = "application/json")
     public String mappingConsumes() {
         log.info("mappingConsumes");
         return "ok";
